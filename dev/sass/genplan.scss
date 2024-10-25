@@ -1,0 +1,10 @@
+.build-items{
+    fill: #75a97500;
+    fill-opacity: 0.5;
+    stroke: #75a97500;
+    stroke-width: 3px;
+    &:hover{
+        fill: $color-5;
+        stroke: $color-5;
+    }
+}

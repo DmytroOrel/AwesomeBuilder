@@ -1,0 +1,15 @@
+footer{
+    margin-top: auto;
+    .information-list{
+        display: flex;
+        padding: 24px 12px;
+        gap: 10px;
+        
+        .information-item{
+            border: 1px solid $color-3;
+            padding: 12px;
+            list-style: none;
+            width: 100%;
+    }
+}
+}

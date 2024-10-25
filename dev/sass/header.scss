@@ -1,0 +1,25 @@
+header{
+    background-color: $color-1;
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        display: inline-block;
+        max-width: 160px;
+    }
+    .header-nav{
+    display: flex;
+    margin-left: auto;
+    font-size: 18px;
+    a{
+        padding: 12px 12px;
+        color: $color-3;
+        text-decoration: none;
+        &:hover{
+            color: #eae08f;
+        }
+    }
+}
+    padding: 24px 12px;
+}
