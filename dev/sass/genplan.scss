@@ -7,4 +7,10 @@
         fill: $color-5;
         stroke: $color-5;
     }
+    &.build-sold{
+        &:hover{
+            fill: #a50202;
+            stroke: #a50202;
+        }
+    }
 }

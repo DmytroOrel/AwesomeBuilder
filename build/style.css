@@ -83,6 +83,10 @@ img {
   fill: #3771e3;
   stroke: #3771e3;
 }
+.build-items.build-sold:hover {
+  fill: #a50202;
+  stroke: #a50202;
+}
 
 footer {
   margin-top: auto;

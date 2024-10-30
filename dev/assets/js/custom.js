@@ -30,6 +30,26 @@ buildItem.forEach(build => {
         informationFlatFree.innerHTML = buildFlatsFree
         informationFlatSale.innerHTML = buildFlatsSale
         informationFlatReserve.innerHTML = buildFlatsReserve
-        
+
     })
+
+
+
+
+
+
+
+    const buildFree = build.getAttribute('data-flat-free')
+    console.log(typeof buildFree);
+    
+    if(Number(buildFree) === 0) {
+        build.classList.add('build-sold')
+    }
+     
+    build.addEventListener('click', function(event){
+        if(build.classList.contains('build-sold')){
+            event.preventDefault();
+        }
+    })
+    
 }) 
