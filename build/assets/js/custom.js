@@ -51,5 +51,24 @@ buildItem.forEach(build => {
             event.preventDefault();
         }
     })
+
+
+
+    const installBuildItem = () => {
+        const floorItem = document.querySelectorAll('.floor-item')
+
+        floorItem.forEach(floor=> {
+            const floorFree = floor.getAttribute('data-flat-free')
+            if(Number(floorFree) === 0){
+                floor.classList.add('floor-sold')
+            }
+
+            floor.addEventListener('click', function(event){
+                if (floor.classList.contains('floor-sold')){
+                    event.preventDefault();
+                }
+            })
+        })
+    }
     
 }) 
