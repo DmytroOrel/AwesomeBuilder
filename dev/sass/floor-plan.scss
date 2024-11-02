@@ -20,12 +20,14 @@
 .flat-status-overlay{
     fill: #fff;
     stroke: #000;
-    stroke-width: 2px;
+}
+.flat-number{
+    fill: #604ded;
+    stroke: #000;
 }
 .flat-number-overlay{
-    fill: rgb(209, 46, 46);
+    fill: #604ded;
     stroke: #000;
-    stroke-width: 2px;
 }
 .flat-number-text{
     fill: #000;

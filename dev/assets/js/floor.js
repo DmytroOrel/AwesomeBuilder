@@ -7,7 +7,7 @@ const flatArr = [{
     square: '82.3 м²',
     price: '720$',
     priceTotal: '59256$',
-    status: 'Sale',
+    status: 'sale',
 },
 {
     id: 1,
@@ -18,7 +18,7 @@ const flatArr = [{
     square: "60,7м²",
     price: "700$",
     priceTotal: "43704$",
-    status: "Sold",
+    status: "sold",
 },
 {
     id: 2,
@@ -29,7 +29,7 @@ const flatArr = [{
     square: "60,7м²",
     price: "700$",
     priceTotal: "42490$",
-    status: "Free",
+    status: "free",
 },
 {
     id: 3,
@@ -40,7 +40,7 @@ const flatArr = [{
     square: "82м²",
     price: "700$",
     priceTotal: "57400$",
-    status: "Booking",
+    status: "booking",
 },
 {
     id: 4,
@@ -51,7 +51,7 @@ const flatArr = [{
     square: "79.7м²",
     price: "700$",
     priceTotal: "55790$",
-    status: "Booking",
+    status: "booking",
 },
 {
     id: 5,
@@ -62,7 +62,7 @@ const flatArr = [{
     square: "39.2м²",
     price: "700$",
     priceTotal: "27440$",
-    status: "Free",
+    status: "free",
 },
 {
     id: 6,
@@ -73,7 +73,7 @@ const flatArr = [{
     square: "40.0м²",
     price: "700$",
     priceTotal: "29400$",
-    status: "Booking",
+    status: "booking",
 },
 {
     id: 7,
@@ -84,7 +84,7 @@ const flatArr = [{
     square: "39.2м²",
     price: "700$",
     priceTotal: "27440$",
-    status: "Sold",
+    status: "sold",
 },
 {
     id: 8,
@@ -95,7 +95,7 @@ const flatArr = [{
     square: "79.3м²",
     price: "700$",
     priceTotal: "55510$",
-    status: "Sale",
+    status: "sale",
 },
 ]
 
@@ -179,11 +179,22 @@ const floorPlan = () => {
                 flat.classList.add(item.status)
             }
         })
+
+
         setFlatStatus()
 
-        if(flat.classList.contains('sale'))[
-            flat.querySelector('.flat-status-text').innerHTML = 'Sale'
-        ]
+
+        if (flat.classList.contains('sale')) {
+            flat.querySelector('.flat-status-text').innerHTML = 'Акція'
+        } else if (flat.classList.contains('booking')) {
+            flat.querySelector('.flat-status-text').innerHTML = 'Бронь'
+        } else if (flat.classList.contains('sold')) {
+            flat.querySelector('.flat-status-text').innerHTML = 'Продано'
+        } else {
+            flat.querySelector('.flat-status-text').innerHTML = 'Вільно'
+        }
+
+
     })
     setInitialActiveClass()
 }
