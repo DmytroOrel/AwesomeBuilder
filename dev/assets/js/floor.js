@@ -183,7 +183,6 @@ const floorPlan = () => {
 
         setFlatStatus()
 
-
         if (flat.classList.contains('sale')) {
             flat.querySelector('.flat-status-text').innerHTML = 'Акція'
         } else if (flat.classList.contains('booking')) {
@@ -194,8 +193,8 @@ const floorPlan = () => {
             flat.querySelector('.flat-status-text').innerHTML = 'Вільно'
         }
 
-
     })
+
     setInitialActiveClass()
 }
 
